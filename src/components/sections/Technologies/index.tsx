@@ -2,5 +2,5 @@
 
 export default function TechnologiesSection(){
 
-  return <section className="h-[100vh] w-full"> TechnologiesSection </section>
+  return <section id="TechnologiesSection" className="h-[100vh] w-full"> TechnologiesSection </section>
 }

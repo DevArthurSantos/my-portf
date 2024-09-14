@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="w-full px-[120px] fixed top-0 left-0 right-0 z-[9999]">
+      <nav className="w-full px-[120px] fixed top-0 left-0 right-0 z-[9999] p-8">
         <div className="justify-between mx-auto md:items-center md:flex">
           <div>
             <div className="flex items-center justify-between md:block">
@@ -57,25 +57,25 @@ export default function Header() {
               className={`flex-1 justify-self-center pb-3 md:block md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 w-[100vw] h-[100vh] md:h-auto md:w-auto top-0 left-0 fixed bg-background' : 'hidden'
                 }`}
             >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex">
-                <li className="py-6 md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
+              <ul className="h-screen md:h-auto items-center justify-center md:flex gap-8">
+                <li className="py-6 font-bold md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
                   <Link href="#homeSection" onClick={() => handleItemMenuPress()}>
-                    inicio
+                    INICIO
                   </Link>
                 </li>
-                <li className="py-6 md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
+                <li className="py-6 font-bold md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
                   <Link href="#ProjectsSection" onClick={() => handleItemMenuPress()}>
-                    projetos
+                    PROJETOS
                   </Link>
                 </li>
-                <li className="py-6 md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
+                <li className="py-6 font-bold md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
                   <Link href="#TechnologiesSection" onClick={() => handleItemMenuPress()}>
-                    tecnologias
+                    TECNOLOGIAS
                   </Link>
                 </li>
-                <li className="py-6 md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
+                <li className="py-6 font-bold md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
                   <Link href="#ContactSection" onClick={() => handleItemMenuPress()}>
-                    contato
+                    CONTATO
                   </Link>
                 </li>
               </ul>

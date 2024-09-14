@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ReactNode } from "react";
+import FooterSection from "@/components/sections/Footer";
+import Header from "@/components/patteners/Header/intex";
 
 const inter = localFont({
   src: "./fonts/Inter.ttf",
@@ -30,7 +32,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${interItalic.variable} antialiased`}
       >
+        <Header />
         {children}
+        <FooterSection />
       </body>
     </html>
   );
