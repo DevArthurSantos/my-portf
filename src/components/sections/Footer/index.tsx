@@ -24,7 +24,6 @@ export default function FooterSection() {
           </form>
         </div>
 
-        
         <ul className="flex font-semibold flex-col gap-[10px] items-start">
           <li className="font-bold text-2xl">Menu</li>
           <li><Link className="flex gap-1 items-center" href='#homeSection' >INICIO</Link></li>
