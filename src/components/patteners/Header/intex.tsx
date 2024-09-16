@@ -21,17 +21,17 @@ export default function Header() {
   return (
     <header>
       <nav className="w-full px-[120px] fixed top-0 left-0 right-0 z-[9999] p-8">
-        <div className="justify-between mx-auto md:items-center md:flex">
+        <div className="justify-between mx-auto lg:items-center lg:flex">
           <div>
-            <div className="flex items-center justify-between md:block">
+            <div className="flex items-center justify-between lg:block">
               <Link href='/'>
-                <Image src={logo} width={57.99} height={31} alt="logotipo com as letras AS em laranja" />
+                <Image className='' src={logo} width={57.99} height={31} alt="logotipo com as letras AS em laranja" />
               </Link>
 
               {/* HAMBURGER BUTTON FOR MOBILE */}
-              <div className="md:hidden md:py-5 z-50">
+              <div className="lg:hidden lg:py-5 z-50">
                 <button
-                  className=" text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className=" text-gray-700 rounded-lg outline-none focus:border-gray-400 focus:border"
                   onClick={() => {
                     setNavbar(!navbar)
                     setNavbarIsOpen(!navbarIsOpen)
@@ -54,31 +54,31 @@ export default function Header() {
           </div>
           <div>
             <div
-              className={`flex-1 justify-self-center pb-3 md:block md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 w-[100vw] h-[100vh] md:h-auto md:w-auto top-0 left-0 fixed bg-background' : 'hidden'
+              className={`flex-1 justify-self-center pb-3 lg:block lg:pb-0 lg:mt-0 ${navbar ? 'p-12 lg:p-0 w-[100vw] h-[100vh] lg:h-auto lg:w-auto top-0 left-0 fixed bg-background' : 'hidden'
                 }`}
             >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex gap-8">
-                <li className="py-6 font-bold md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
+              <ul className="h-screen lg:h-auto items-center justify-center lg:flex gap-8">
+                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-purple-600 lg:hover:bg-transparen">
                   <Link href="#homeSection" onClick={() => handleItemMenuPress()}>
                     INICIO
                   </Link>
                 </li>
-                <li className="py-6 font-bold md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
+                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-purple-600 lg:hover:bg-transparen">
                   <Link href="#WorksSection" onClick={() => handleItemMenuPress()}>
                     EXPERIENCIAS
                   </Link>
                 </li>
-                <li className="py-6 font-bold md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
+                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-purple-600 lg:hover:bg-transparen">
                   <Link href="#ProjectsSection" onClick={() => handleItemMenuPress()}>
                     PROJETOS
                   </Link>
                 </li>
-                <li className="py-6 font-bold md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
+                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-purple-600 lg:hover:bg-transparen">
                   <Link href="#TechnologiesSection" onClick={() => handleItemMenuPress()}>
                     TECNOLOGIAS
                   </Link>
                 </li>
-                <li className="py-6 font-bold md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
+                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-purple-600 lg:hover:bg-transparen">
                   <Link href="#ContactSection" onClick={() => handleItemMenuPress()}>
                     CONTATO
                   </Link>
