@@ -64,6 +64,11 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="py-6 font-bold md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
+                  <Link href="#WorksSection" onClick={() => handleItemMenuPress()}>
+                    EXPERIENCIAS
+                  </Link>
+                </li>
+                <li className="py-6 font-bold md:py-0 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparen">
                   <Link href="#ProjectsSection" onClick={() => handleItemMenuPress()}>
                     PROJETOS
                   </Link>
