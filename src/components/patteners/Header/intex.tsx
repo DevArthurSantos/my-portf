@@ -4,12 +4,30 @@ import logo from '@/assets/logo.png'
 import menuIcon from '@/assets/menu-icon.png'
 import closedMenu from '@/assets/closed-menu.png'
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
   const [navbarIsOpen, setNavbarIsOpen] = useState(false);
+  const [bgColor, setBgColor] = useState('bg-transparent')
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY
+
+      if (scrollY > 100) {
+        setBgColor('bg-blackSecondary text-black md:text-white')
+      } else {
+        setBgColor('bg-transparent')
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   const handleItemMenuPress = () => {
     if (navbarIsOpen) {
@@ -20,7 +38,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="w-full px-[120px] fixed top-0 left-0 right-0 z-[9999] p-8">
+      <nav className={`w-full px-[120px] fixed top-0 left-0 right-0 z-[9999] shadow-md p-8 ${bgColor}`}>
         <div className="justify-between mx-auto lg:items-center lg:flex">
           <div>
             <div className="flex items-center justify-between lg:block">

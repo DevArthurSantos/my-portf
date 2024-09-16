@@ -12,6 +12,7 @@ const config: Config = {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         black: "var(--black)",
+        blackSecondary: "var(--blackSecondary)",
         text: "var(--text)",
         background: "var(--background)",
         backgroundSecondary: "var(--backgroundSecondary)",
