@@ -8,7 +8,7 @@ import WorksSection from "@/components/sections/Works";
 export default function root() {
 
   return (
-    <main className="px-[120px] flex items-center justify-center flex-col max-w-[1920px] mx-auto">
+    <main className="flex items-center justify-center flex-col max-w-[1920px] mx-auto">
       <HomeSection />
       <WorksSection />
       <ProjectsSection />
