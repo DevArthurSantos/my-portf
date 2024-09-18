@@ -20,6 +20,21 @@ body {
     color: var(--text);
 }
 
+
+*::-webkit-scrollbar-track {
+    background-color: #fefefe;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 6px;
+    background-color: #fefefe;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: var(--primary);
+  }
+
 @layer utilities {
     .text-balance {
         text-wrap: balance;
