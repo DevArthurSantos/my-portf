@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function TechnologiesSection() {
   return (
-    <section id="TechnologiesSection" className="py-[44px] w-full px-[120px]">
+    <section id="TechnologiesSection" className="py-[44px] w-full px-[60px] md:px-[120px]">
       <h2 className="mt-2 text-sm md:text-md lg:text-[24px] font-bold text-center">
         FERRAMENTAS E <span className="text-primary">TECNOLOGIAS</span>.
       </h2>

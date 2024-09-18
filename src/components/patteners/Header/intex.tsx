@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className='w-full md:px-[120px] fixed top-0 left-0 right-0 z-[9999] shadow-md p-8 bg-background'>
+      <nav className='w-full px-[60px] md:px-[120px] fixed top-0 left-0 right-0 z-[9999] shadow-md p-8 bg-background'>
         <div className="justify-between mx-auto lg:items-center lg:flex">
           <div>
             <div className="flex items-center justify-between lg:block">

@@ -19,7 +19,7 @@ export default function ProjectsSection() {
   }
 
   return (
-    <section id="ProjectsSection" className="w-full md:px-[120px]">
+    <section id="ProjectsSection" className="w-full px-[60px] md:px-[120px]">
       <h2 className="mt-2 text-sm md:text-md lg:text-[24px] font-bold text-center">MEUS <span className="text-primary">PROJETOS</span>.</h2>
       <div className="flex items-center justify-center gap-8 md:gap-10 flex-col lg:flex-row w-full h-full my-8">
         <ProjectFrame href={projectsInfos[project].href} project={project+1} nextProject={nextProject} previousProject={previousProject} />

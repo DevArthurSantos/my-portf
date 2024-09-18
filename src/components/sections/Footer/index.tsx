@@ -10,7 +10,7 @@ export default function FooterSection() {
 
   return (
     <footer className="flex justify-center items-center flex-col bg-backgroundSecondary">
-      <div className="px-[120px] w-full flex items-start gap-8 justify-between pt-6 flex-wrap ">
+      <div className="px-[60px] md:px-[120px] w-full flex items-start gap-8 justify-between pt-6 flex-wrap ">
 
         <div className="hidden sm:flex items-start flex-col min-w-[100px] max-w-[400px]">
           <div><p className="md:text-2xl font-bold">Inscreva-se na nossa newsletter</p></div>
