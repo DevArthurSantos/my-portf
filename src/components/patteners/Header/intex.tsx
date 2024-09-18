@@ -4,30 +4,13 @@ import logo from '@/assets/logo.png'
 import menuIcon from '@/assets/menu-icon.png'
 import closedMenu from '@/assets/closed-menu.png'
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
   const [navbarIsOpen, setNavbarIsOpen] = useState(false);
-  const [bgColor, setBgColor] = useState('bg-transparent')
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY
-
-      if (scrollY > 100) {
-        setBgColor('bg-blackSecondary text-black md:text-white')
-      } else {
-        setBgColor('bg-transparent')
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+  
 
   const handleItemMenuPress = () => {
     if (navbarIsOpen) {
@@ -38,7 +21,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className={`w-full px-[120px] fixed top-0 left-0 right-0 z-[9999] shadow-md p-8 ${bgColor}`}>
+      <nav className='w-full md:px-[120px] fixed top-0 left-0 right-0 z-[9999] shadow-md p-8 bg-background'>
         <div className="justify-between mx-auto lg:items-center lg:flex">
           <div>
             <div className="flex items-center justify-between lg:block">
@@ -76,27 +59,27 @@ export default function Header() {
                 }`}
             >
               <ul className="h-screen lg:h-auto items-center justify-center lg:flex gap-8">
-                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-purple-600 lg:hover:bg-transparen">
+                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-primary lg:hover:bg-transparen">
                   <Link href="#homeSection" onClick={() => handleItemMenuPress()}>
                     INICIO
                   </Link>
                 </li>
-                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-purple-600 lg:hover:bg-transparen">
+                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-primary lg:hover:bg-transparen">
                   <Link href="#WorksSection" onClick={() => handleItemMenuPress()}>
                     EXPERIENCIAS
                   </Link>
                 </li>
-                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-purple-600 lg:hover:bg-transparen">
+                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-primary lg:hover:bg-transparen">
                   <Link href="#ProjectsSection" onClick={() => handleItemMenuPress()}>
                     PROJETOS
                   </Link>
                 </li>
-                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-purple-600 lg:hover:bg-transparen">
+                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-primary lg:hover:bg-transparen">
                   <Link href="#TechnologiesSection" onClick={() => handleItemMenuPress()}>
                     TECNOLOGIAS
                   </Link>
                 </li>
-                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-purple-600 lg:hover:bg-transparen">
+                <li className="py-6 font-bold lg:py-0 text-center border-b-2 lg:border-b-0 lg:hover:text-primary lg:hover:bg-transparen">
                   <Link href="#ContactSection" onClick={() => handleItemMenuPress()}>
                     CONTATO
                   </Link>
