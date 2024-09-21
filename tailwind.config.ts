@@ -14,6 +14,7 @@ const config: Config = {
         black: "var(--black)",
         blackSecondary: "var(--blackSecondary)",
         text: "var(--text)",
+        textSecondary: "var(--textSecondary)",
         background: "var(--background)",
         backgroundSecondary: "var(--backgroundSecondary)",
         gradientStart: "var(--gradient-start)",
