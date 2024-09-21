@@ -11,8 +11,8 @@ export default function TechnologiesSection() {
       </p>
 
       <div className="flex flex-wrap flex-col justify-center gap-4 mt-4">
-        <div className="flex flex-wrap justify-center gap-4 mt-4">
-          {Array.from({ length: 12 }).map((_, index) => {
+        <div className="flex flex-wrap justify-center gap-4 mt-4 max-w-[600px] m-auto">
+          {Array.from({ length: 20 }).map((_, index) => {
           const size = index + 1 > 19 ? 76 : 34;
           const delay = (index + 1) * 100;
 
@@ -23,34 +23,12 @@ export default function TechnologiesSection() {
               alt={`Tecnologia ${index}`}
               width={size}
               height={40}
-              placeholder="blur"
               blurDataURL={`/technologies/${index}.png`}
               className={`animate-bounce`}
               style={{ animationDelay: `${delay}ms`, animationDuration: "2s" }}
             />
           );
         })}
-        </div>
-        <div className="flex flex-wrap justify-center gap-4 mt-4">
-          {Array.from({ length: 20 }).map((_, index) => {
-            if(index < 12) return (<></>)
-            const size = index + 1 > 19 ? 76 : 34;
-            const delay = (index + 1) * 100;
-
-            return (
-              <Image
-                key={index}
-                src={`/technologies/${index + 1}.png`}
-                alt={`Tecnologia ${index}`}
-                width={size}
-                height={40}
-                placeholder="blur"
-                blurDataURL={`/technologies/${index}.png`}
-                className={`animate-bounce`}
-                style={{ animationDelay: `${delay}ms`, animationDuration: "2s" }}
-              />
-            );
-          })}
         </div>
       </div>
     </section>
