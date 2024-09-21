@@ -9,7 +9,7 @@ type WorkComponentProps = {
 export default function WorkComponent({ company, date, position, text }: WorkComponentProps) {
 
   return (
-    <li className="relative flex bg-backgroundSecondary flex-col p-4 rounded-md m-auto items-start justify-start gap-4 text-sm lg:text-lg md:flex-row md:w-full md:bg-transparent md:justify-between">
+    <li className="relative max-w-[1000px] flex bg-backgroundSecondary flex-col p-4 rounded-md m-auto items-start justify-start gap-4 text-sm lg:text-lg md:flex-row md:w-full md:bg-transparent md:justify-between">
       <div className="flex items-start flex-col gap-4 max-w-[80px]">
         <h3 className="font-bold whitespace-nowrap">{company}</h3>
         <h3 className="font-bold text-[12px] text-textSecondary whitespace-nowrap ">{date}</h3>
